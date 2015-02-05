@@ -53,13 +53,13 @@ public void drawFractal(int x, int y, double branchLength, double angle) {
 		//first leaf
 		pushMatrix();
 		translate(endX1, endY1);
-		rotate((float)(Math.PI/4));
+		rotate((float)Math.PI/4);
 		ellipse(0, 0, lHeight, lWidth);
 		popMatrix();
 		//second leaf
 		pushMatrix();
 		translate(endX2, endY1);
-		rotate((float)-(Math.PI/4));
+		rotate((float)-Math.PI/4);
 		ellipse(0, 0, lHeight, lWidth);
 		popMatrix();
 		//getting ready for the next leaves
