@@ -48,18 +48,20 @@ public void drawFractal(int x, int y, double branchLength, double angle) {
 	float endX1 = endX -30;
 	float endY1 = endY - 20;
 	float endX2 = endX + 30;
+	float rot1 = (float)Math.PI/4;
+	float rot2 = (float)-Math.PI/4;
 	for(int leaves = 0; leaves<=3; leaves++) {
 		fill(15,128,36);
 		//first leaf
 		pushMatrix();
 		translate(endX1, endY1);
-		rotate((float)Math.PI/4);
+		rotate(rot1);
 		ellipse(0, 0, lHeight, lWidth);
 		popMatrix();
 		//second leaf
 		pushMatrix();
 		translate(endX2, endY1);
-		rotate((float)-Math.PI/4);
+		rotate(rot2);
 		ellipse(0, 0, lHeight, lWidth);
 		popMatrix();
 		//getting ready for the next leaves
